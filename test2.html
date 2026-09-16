@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Saint George Orthodox Church in Al-Salt, Jordan — faith, heritage, prayer and community.">
+<title>Saint George Church | Al-Salt, Jordan</title>
+<style>
+:root{
+  --gold:#c9a24d;
+  --gold2:#f0d58a;
+  --cream:#fbf7ee;
+  --stone:#d7c29a;
+  --brown:#33251b;
+  --dark:#17120f;
+  --white:#fff;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:var(--brown)}
+a{text-decoration:none;color:inherit}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 6%;background:rgba(23,18,15,.88);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(240,213,138,.35)
+}
+.logo{font-weight:bold;color:var(--gold2);font-size:1.05rem;letter-spacing:.5px}
+.navlinks{display:flex;gap:24px;color:#fff;font-family:Arial,sans-serif;font-size:.9rem}
+.navlinks a:hover{color:var(--gold2)}
+.lang{position:fixed;right:22px;top:12px;z-index:100;border:1px solid var(--gold);background:rgba(23,18,15,.92);color:#fff;border-radius:20px;padding:8px 15px;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,.25)}
+.hero{
+  min-height:100vh;display:grid;place-items:center;text-align:center;color:white;
+  background:
+    linear-gradient(rgba(20,12,7,.48),rgba(20,12,7,.78)),
+    url("https://visitassalt.com/wp-content/uploads/2021/10/d5d16b53-98cd-4764-85f2-6d332fa268ff.jpg") center/cover;
+  padding:110px 20px 70px;position:relative
+}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:100px;background:linear-gradient(transparent,var(--cream))}
+.hero-content{max-width:900px;position:relative;z-index:2}
+.cross{font-size:3.2rem;color:var(--gold2);margin-bottom:8px}
+.kicker{font-family:Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);font-size:.8rem}
+h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:14px 0;text-shadow:0 4px 25px #000}
+.subtitle{font-size:clamp(1.05rem,2vw,1.45rem);max-width:720px;margin:0 auto 30px;line-height:1.7}
+.btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:30px;font-family:Arial,sans-serif;font-weight:bold}
+.primary{background:var(--gold);color:#1e140d}.outline{border:1px solid #fff;color:#fff;background:rgba(0,0,0,.15)}
+section{padding:90px 7%;max-width:1250px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:2px;font-size:.75rem;color:#98752e}
+h2{font-size:clamp(2rem,4vw,3.3rem);margin:10px 0}
+.lead{max-width:760px;margin:auto;line-height:1.8;font-size:1.08rem}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.about-image{width:100%;height:520px;object-fit:cover;border-radius:4px;box-shadow:0 18px 50px rgba(51,37,27,.18)}
+.card{background:#fff;border:1px solid #e5d7bb;padding:30px;box-shadow:0 10px 35px rgba(51,37,27,.08)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card h3{margin-top:0;color:#76551d;font-size:1.35rem}
+.card p{line-height:1.75}
+.icon{font-size:2rem;color:var(--gold)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{margin:0;position:relative;overflow:hidden;background:#ddd;height:310px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:18px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.85));font-family:Arial,sans-serif}
+.quote{background:var(--dark);color:#fff;text-align:center;max-width:none;padding:100px 12%;position:relative}
+.quote:before{content:"✦";color:var(--gold2);font-size:2rem}
+.quote p{font-size:clamp(1.4rem,3vw,2.4rem);line-height:1.5;max-width:900px;margin:20px auto}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.info{padding:25px;border-left:4px solid var(--gold);background:#fff}
+.info strong{display:block;margin-bottom:7px;color:#76551d}
+.facebook{background:linear-gradient(135deg,#34261c,#70532e);color:white;max-width:1000px;border-radius:8px;padding:45px;text-align:center;margin:auto}
+.facebook .btn{display:inline-block;margin-top:15px;background:#fff;color:#33251b}
+footer{background:#120e0b;color:#d9c9aa;text-align:center;padding:35px 20px;font-family:Arial,sans-serif;font-size:.85rem}
+[dir="rtl"]{font-family:Tahoma,Arial,sans-serif}
+[dir="rtl"] .about-grid,[dir="rtl"] .info{direction:rtl}
+@media(max-width:850px){
+  .navlinks{display:none}
+  .about-grid,.cards,.gallery,.info-grid{grid-template-columns:1fr}
+  .about-image{height:380px}
+  section{padding:70px 6%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">✝ SAINT GEORGE • AL-SALT</div>
+  <div class="navlinks" style="margin-right:105px">
+    <a href="#about" data-en="About" data-ar="عن الكنيسة" data-gr="Σχετικά">About</a>
+    <a href="#heritage" data-en="Heritage" data-ar="التراث" data-gr="Κληρονομιά">Heritage</a>
+    <a href="#gallery" data-en="Gallery" data-ar="الصور" data-gr="Φωτογραφίες">Gallery</a>
+    <a href="#visit" data-en="Visit" data-ar="الزيارة" data-gr="Επίσκεψη">Visit</a>
+    <a href="#facebook" data-en="Facebook" data-ar="فيسبوك" data-gr="Facebook">Facebook</a>
+  </div>
+  <button class="lang" onclick="toggleLang()">العربية</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="cross">✝</div>
+    <div class="kicker" data-en="A place of faith • heritage • peace" data-ar="مكان للإيمان • التراث • السلام" data-gr="Ένας τόπος πίστης • κληρονομιάς • ειρήνης">A place of faith • heritage • peace</div>
+    <h1 data-en="Saint George Church" data-ar="كنيسة القديس جاورجيوس" data-gr="Εκκλησία του Αγίου Γεωργίου">Saint George Church</h1>
+    <p class="subtitle" data-en="Al-Khader Orthodox Church — a sacred landmark in the old city of Al-Salt, Jordan, where prayer, history and community meet."
+       data-ar="كنيسة الخضر الأرثوذكسية — معلم مقدس في البلدة القديمة بمدينة السلط في الأردن، حيث يلتقي الإيمان والتاريخ والمجتمع." data-gr="Ορθόδοξη Εκκλησία του Αγίου Χαραλάμπους (Αλ-Χαντέρ) — ένα ιερό ορόσημο στην παλιά πόλη του Αλ-Σαλτ της Ιορδανίας, όπου συναντώνται η προσευχή, η ιστορία και η κοινότητα.">
+      Al-Khader Orthodox Church — a sacred landmark in the old city of Al-Salt, Jordan, where prayer, history and community meet.
+    </p>
+    <div class="btns">
+      <a class="btn primary" href="#about" data-en="Explore the Church" data-ar="اكتشف الكنيسة" data-gr="Εξερευνήστε την Εκκλησία">Explore the Church</a>
+      <a class="btn outline" href="#facebook" data-en="Visit Our Facebook" data-ar="صفحتنا على فيسبوك" data-gr="Επισκεφθείτε το Facebook μας">Visit Our Facebook</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-title">
+    <div class="eyebrow" data-en="Our Church" data-ar="كنيستنا" data-gr="Η Εκκλησία μας">Our Church</div>
+    <h2 data-en="A living piece of Jordanian Christian heritage" data-ar="جزء حي من التراث المسيحي الأردني" data-gr="Ένα ζωντανό κομμάτι της ιορδανικής χριστιανικής κληρονομιάς">A living piece of Jordanian Christian heritage</h2>
+    <p class="lead" data-en="Saint George Church, also known locally as Al-Khader Church, stands in the historic Al-Khader area of Al-Salt. The church belongs to the Greek Orthodox tradition and remains both a place of worship and an important heritage destination."
+       data-ar="تقع كنيسة القديس جاورجيوس، المعروفة محلياً باسم كنيسة الخضر، في منطقة الخضر التاريخية في مدينة السلط. وتنتمي الكنيسة إلى التقليد الأرثوذكسي اليوناني، وما زالت مكاناً للعبادة ومعْلماً تراثياً مهماً." data-gr="Η Εκκλησία του Αγίου Γεωργίου, γνωστή τοπικά και ως Εκκλησία Αλ-Χαντέρ, βρίσκεται στην ιστορική περιοχή Αλ-Χαντέρ του Αλ-Σαλτ. Η εκκλησία ανήκει στην ελληνορθόδοξη παράδοση και παραμένει τόσο τόπος λατρείας όσο και σημαντικός προορισμός πολιτιστικής κληρονομιάς.">
+      Saint George Church, also known locally as Al-Khader Church, stands in the historic Al-Khader area of Al-Salt. The church belongs to the Greek Orthodox tradition and remains both a place of worship and an important heritage destination.
+    </p>
+  </div>
+  <div class="about-grid">
+    <img class="about-image" src="https://orthodoxjordan.org/wp-content/uploads/elementor/thumbs/344A5612-scaled-qo3ppclqx7l9bh89sv4rhd4oud4wd50glz616rvdw0.jpg" alt="Interior of Saint George Church in Al-Salt">
+    <div>
+      <div class="card">
+        <div class="icon">☦</div>
+        <h3 data-en="Faith beneath historic stone" data-ar="إيمان بين الحجارة التاريخية" data-gr="Πίστη κάτω από ιστορική πέτρα">Faith beneath historic stone</h3>
+        <p data-en="The church was built in 1682 over an ancient cave during the Ottoman period. Its stone architecture, icons, wooden details and quiet atmosphere connect today's worshippers with centuries of local history."
+           data-ar="بُنيت الكنيسة عام 1682 فوق مغارة أثرية خلال العهد العثماني. وتربط عمارتها الحجرية وأيقوناتها وتفاصيلها الخشبية وأجواؤها الهادئة المصلين اليوم بتاريخ محلي يمتد عبر القرون." data-gr="Η εκκλησία χτίστηκε το 1682 πάνω από ένα αρχαίο σπήλαιο κατά την οθωμανική περίοδο. Η πέτρινη αρχιτεκτονική, οι εικόνες, οι ξύλινες λεπτομέρειες και η ήρεμη ατμόσφαιρά της συνδέουν τους σημερινούς πιστούς με αιώνες τοπικής ιστορίας.">
+          The church was built in 1682 over an ancient cave during the Ottoman period. Its stone architecture, icons, wooden details and quiet atmosphere connect today's worshippers with centuries of local history.
+        </p>
+      </div>
+      <br>
+      <div class="card">
+        <div class="icon">🕯</div>
+        <h3 data-en="A house of prayer" data-ar="بيت للصلاة" data-gr="Οίκος προσευχής">A house of prayer</h3>
+        <p data-en="Visitors encounter a peaceful sacred space filled with icons, candles and traditional Orthodox furnishings. The church is also remembered as a place where people come to pray and seek blessing."
+           data-ar="يجد الزائر مساحة مقدسة هادئة تملؤها الأيقونات والشموع والتجهيزات الأرثوذكسية التقليدية. كما تُعرف الكنيسة كمكان يأتي إليه الناس للصلاة وطلب البركة." data-gr="Οι επισκέπτες συναντούν έναν ήρεμο ιερό χώρο γεμάτο εικόνες, κεριά και παραδοσιακά ορθόδοξα αντικείμενα. Η εκκλησία είναι επίσης γνωστή ως τόπος όπου οι άνθρωποι έρχονται για να προσευχηθούν και να ζητήσουν ευλογία.">
+          Visitors encounter a peaceful sacred space filled with icons, candles and traditional Orthodox furnishings. The church is also remembered as a place where people come to pray and seek blessing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="story"><div class="section-title"><div class="eyebrow" data-en="The Story of the Church" data-ar="قصة الكنيسة" data-gr="Η Ιστορία της Εκκλησίας">The Story of the Church</div><h2 data-en="A sacred story carved into the stone of Al-Salt" data-ar="قصة مقدسة محفورة في حجارة السلط" data-gr="Μια ιερή ιστορία χαραγμένη στην πέτρα του Αλ-Σαλτ">A sacred story carved into the stone of Al-Salt</h2><p class="lead" data-en="Saint George Church, also known as Al-Khader Church, is one of the best-known Christian heritage sites in historic Al-Salt. The church rises above an ancient cave and forms part of the city's remarkable landscape of old stone buildings, churches and mosques." data-ar="كنيسة القديس جاورجيوس، المعروفة أيضاً باسم كنيسة الخضر، هي من أشهر مواقع التراث المسيحي في السلط القديمة. تقوم الكنيسة فوق مغارة قديمة وتشكل جزءاً من المشهد المميز للمدينة بما فيه من مبانٍ حجرية قديمة وكنائس ومساجد." data-gr="Η Εκκλησία του Αγίου Γεωργίου, γνωστή και ως Εκκλησία Αλ-Χαντέρ, είναι ένας από τους σημαντικότερους χριστιανικούς χώρους κληρονομιάς στο ιστορικό Αλ-Σαλτ. Η εκκλησία βρίσκεται πάνω από μια αρχαία σπηλιά και αποτελεί μέρος του ξεχωριστού τοπίου της πόλης με παλιά πέτρινα κτίρια, εκκλησίες και τζαμιά.">Saint George Church, also known as Al-Khader Church, is one of the best-known Christian heritage sites in historic Al-Salt. The church rises above an ancient cave and forms part of the city's remarkable landscape of old stone buildings, churches and mosques.</p></div><div class="cards">
+<div class="card"><div class="icon">🕯</div><h3 data-en="The sacred cave" data-ar="المغارة المقدسة" data-gr="Η ιερή σπηλιά">The sacred cave</h3><p data-en="The sanctuary was built over a cave and is closely connected with local traditions surrounding Saint George. The cave remains one of the most distinctive parts of the pilgrimage experience." data-ar="بُني المقام فوق مغارة وترتبط به تقاليد محلية كثيرة حول القديس جاورجيوس. وما تزال المغارة من أبرز أجزاء تجربة زيارة المكان المقدس." data-gr="Το προσκύνημα χτίστηκε πάνω από μια σπηλιά και συνδέεται στενά με τις τοπικές παραδόσεις για τον Άγιο Γεώργιο. Η σπηλιά παραμένει ένα από τα πιο χαρακτηριστικά μέρη της εμπειρίας του προσκυνήματος.">The sanctuary was built over a cave and is closely connected with local traditions surrounding Saint George. The cave remains one of the most distinctive parts of the pilgrimage experience.</p></div>
+<div class="card"><div class="icon">🐎</div><h3 data-en="Saint George" data-ar="القديس جاورجيوس" data-gr="Ο Άγιος Γεώργιος">Saint George</h3><p data-en="Saint George is traditionally depicted as a Christian knight on horseback defeating a dragon. This image is especially important to the visual identity of the church and its icons." data-ar="يُصوَّر القديس جاورجيوس تقليدياً كفارس مسيحي يمتطي حصاناً ويهزم التنين. وتحتل هذه الصورة مكانة بارزة في هوية الكنيسة البصرية وأيقوناتها." data-gr="Ο Άγιος Γεώργιος απεικονίζεται παραδοσιακά ως χριστιανός ιππότης πάνω σε άλογο που νικά τον δράκο. Η εικόνα αυτή έχει ιδιαίτερη σημασία για την οπτική ταυτότητα της εκκλησίας και τις εικόνες της.">Saint George is traditionally depicted as a Christian knight on horseback defeating a dragon. This image is especially important to the visual identity of the church and its icons.</p></div>
+<div class="card"><div class="icon">🏛</div><h3 data-en="Al-Salt heritage" data-ar="تراث السلط" data-gr="Η κληρονομιά του Αλ-Σαλτ">Al-Salt heritage</h3><p data-en="The church sits within the historic heart of Al-Salt, a city famous for its golden limestone architecture and its tradition of religious coexistence." data-ar="تقع الكنيسة في قلب السلط التاريخي، المدينة المعروفة بعمارتها الحجرية الصفراء وبإرثها من التعايش الديني." data-gr="Η εκκλησία βρίσκεται στην ιστορική καρδιά του Αλ-Σαλτ, μιας πόλης γνωστής για την αρχιτεκτονική της από χρυσαφένιο ασβεστόλιθο και την παράδοση θρησκευτικής συνύπαρξης.">The church sits within the historic heart of Al-Salt, a city famous for its golden limestone architecture and its tradition of religious coexistence.</p></div></div></section>
+<section id="hours"><div class="section-title"><div class="eyebrow" data-en="Opening Hours & Worship" data-ar="أوقات الزيارة والعبادة" data-gr="Ώρες Επίσκεψης & Λατρείας">Opening Hours & Worship</div><h2 data-en="Plan your visit" data-ar="خطط لزيارتك" data-gr="Σχεδιάστε την επίσκεψή σας">Plan your visit</h2></div><div class="info-grid">
+<div class="info"><strong data-en="Church opening hours" data-ar="أوقات فتح الكنيسة" data-gr="Ώρες λειτουργίας της εκκλησίας">Church opening hours</strong><span data-en="Every day: 8:00 AM – 8:00 PM" data-ar="يومياً: من الساعة 8:00 صباحاً حتى 8:00 مساءً" data-gr="Καθημερινά: 8:00 π.μ. – 8:00 μ.μ.">Every day: 8:00 AM – 8:00 PM</span></div>
+<div class="info"><strong data-en="Friday Divine Liturgy" data-ar="القداس الإلهي يوم الجمعة" data-gr="Θεία Λειτουργία την Παρασκευή">Friday Divine Liturgy</strong><span data-en="Divine Liturgy: Friday, 8:00 AM – 10:30 AM." data-ar="القداس الإلهي: يوم الجمعة من الساعة 8:00 صباحاً حتى 10:30 صباحاً." data-gr="Θεία Λειτουργία: Παρασκευή, 8:00 π.μ. – 10:30 π.μ.">Divine Liturgy: Friday, 8:00 AM – 10:30 AM.</span></div>
+<div class="info"><strong data-en="Sunday Divine Liturgy" data-ar="القداس الإلهي يوم الأحد" data-gr="Θεία Λειτουργία την Κυριακή">Sunday Divine Liturgy</strong><span data-en="Divine Liturgy: Sunday, 8:00 AM – 10:30 AM." data-ar="القداس الإلهي: يوم الأحد من الساعة 8:00 صباحاً حتى 10:30 صباحاً." data-gr="Θεία Λειτουργία: Κυριακή, 8:00 π.μ. – 10:30 π.μ.">Divine Liturgy: Sunday, 8:00 AM – 10:30 AM.</span></div>
+<div class="info"><strong data-en="A respectful visit" data-ar="زيارة باحترام" data-gr="Μια επίσκεψη με σεβασμό">A respectful visit</strong><span data-en="Please keep the church peaceful, dress respectfully, and follow any instructions from church staff or clergy." data-ar="يرجى الحفاظ على هدوء الكنيسة، وارتداء لباس لائق، واتباع تعليمات العاملين في الكنيسة أو رجال الدين." data-gr="Παρακαλούμε να διατηρείτε την ηρεμία του ναού, να ντύνεστε με σεβασμό και να ακολουθείτε τις οδηγίες του προσωπικού ή του κλήρου.">Please keep the church peaceful, dress respectfully, and follow any instructions from church staff or clergy.</span></div></div><p style="text-align:center;margin-top:25px;font-family:Arial,sans-serif;font-size:.85rem;opacity:.7" data-en="Service times are based on Jordan Tourism Board information; please confirm locally before a special visit." data-ar="أوقات القداس مستندة إلى معلومات هيئة تنشيط السياحة الأردنية؛ يرجى التأكد محلياً قبل الزيارة الخاصة." data-gr="Οι ώρες των ακολουθιών βασίζονται σε πληροφορίες του Jordan Tourism Board· παρακαλούμε επιβεβαιώστε τοπικά πριν από ειδική επίσκεψη.">Service times are based on Jordan Tourism Board information; please confirm locally before a special visit.</p></section>
+
+<section id="heritage">
+  <div class="section-title">
+    <div class="eyebrow" data-en="Heritage & Story" data-ar="التراث والقصة" data-gr="Κληρονομιά & Ιστορία">Heritage & Story</div>
+    <h2 data-en="More than a building" data-ar="أكثر من مجرد مبنى" data-gr="Περισσότερο από ένα κτίριο">More than a building</h2>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="icon">1682</div><h3 data-en="Historic foundation" data-ar="تأسيس تاريخي" data-gr="Ιστορικά θεμέλια">Historic foundation</h3><p data-en="Official Jordanian heritage and tourism sources date the Al-Khader / Saint George shrine to the 17th century, with the church built in 1682." data-ar="تؤرخ المصادر الأردنية الرسمية للتراث والسياحة مقام الخضر/القديس جاورجيوس إلى القرن السابع عشر، مع بناء الكنيسة عام 1682." data-gr="Επίσημες ιορδανικές πηγές πολιτιστικής κληρονομιάς και τουρισμού χρονολογούν το προσκύνημα Αλ-Χαντέρ / Αγίου Γεωργίου στον 17ο αιώνα, με την εκκλησία να έχει χτιστεί το 1682.">Official Jordanian heritage and tourism sources date the Al-Khader / Saint George shrine to the 17th century, with the church built in 1682.</p></div>
+    <div class="card"><div class="icon">🕊</div><h3 data-en="Peace & coexistence" data-ar="السلام والتعايش" data-gr="Ειρήνη & συνύπαρξη">Peace & coexistence</h3><p data-en="Jordan's tourism story highlights the church as a place visited by Christians and Muslims alike, reflecting the historic spirit of coexistence in Al-Salt." data-ar="تسلط السياحة الأردنية الضوء على الكنيسة كمكان يزوره المسيحيون والمسلمون، بما يعكس روح التعايش التاريخية في مدينة السلط." data-gr="Οι ιορδανικές τουριστικές πηγές παρουσιάζουν την εκκλησία ως τόπο που επισκέπτονται τόσο Χριστιανοί όσο και Μουσουλμάνοι, αντικατοπτρίζοντας το ιστορικό πνεύμα συνύπαρξης του Αλ-Σαλτ.">Jordan's tourism story highlights the church as a place visited by Christians and Muslims alike, reflecting the historic spirit of coexistence in Al-Salt.</p></div>
+    <div class="card"><div class="icon">⛪</div><h3 data-en="Living Orthodox tradition" data-ar="التقليد الأرثوذكسي الحي" data-gr="Ζωντανή Ορθόδοξη παράδοση">Living Orthodox tradition</h3><p data-en="The church continues to serve a worshipping community, with liturgical life, clergy and parish groups forming part of its ongoing story." data-ar="تواصل الكنيسة خدمة جماعة مؤمنة، وتشكل الصلوات والطقوس والكهنة ومجموعات الرعية جزءاً من قصتها المستمرة." data-gr="Η εκκλησία συνεχίζει να υπηρετεί μια κοινότητα πιστών, με τη λειτουργική ζωή, τον κλήρο και τις ενοριακές ομάδες να αποτελούν μέρος της συνεχούς ιστορίας της.">The church continues to serve a worshipping community, with liturgical life, clergy and parish groups forming part of its ongoing story.</p></div>
+  </div>
+</section>
+
+<div class="quote">
+  <div data-en="“A place where history becomes prayer, and stone becomes a witness to faith.”"
+       data-ar="«مكان يتحول فيه التاريخ إلى صلاة، وتصبح فيه الحجارة شاهدة على الإيمان.»" data-gr="«Ένας τόπος όπου η ιστορία γίνεται προσευχή και η πέτρα γίνεται μάρτυρας της πίστης.»">
+    “A place where history becomes prayer, and stone becomes a witness to faith.”
+  </div>
+</div>
+
+<section id="gallery">
+  <div class="section-title">
+    <div class="eyebrow" data-en="Gallery" data-ar="معرض الصور" data-gr="Φωτογραφίες">Gallery</div>
+    <h2 data-en="See the sacred details" data-ar="شاهد التفاصيل المقدسة" data-gr="Δείτε τις ιερές λεπτομέρειες">See the sacred details</h2>
+    <p class="lead" data-en="A selection of photographs from public heritage and church sources, showing the architecture, icons and prayerful atmosphere of the site."
+       data-ar="مجموعة من الصور من مصادر تراثية وكنسية عامة، تُظهر العمارة والأيقونات والأجواء الروحية للمكان." data-gr="Μια επιλογή φωτογραφιών από δημόσιες πηγές πολιτιστικής κληρονομιάς και εκκλησιαστικές πηγές, που παρουσιάζουν την αρχιτεκτονική, τις εικόνες και την κατανυκτική ατμόσφαιρα του χώρου.">
+      A selection of photographs from public heritage and church sources, showing the architecture, icons and prayerful atmosphere of the site.
+    </p>
+  </div>
+  <div class="gallery">
+    <figure><img src="https://visitassalt.com/wp-content/uploads/2021/10/d962fc3a-1456-48dd-acdb-837fa4b2f608.jpg" alt="Historic interior of Saint George Church"><figcaption data-en="The historic stone interior" data-ar="الداخل الحجري التاريخي" data-gr="Το ιστορικό πέτρινο εσωτερικό">The historic stone interior</figcaption></figure>
+    <figure><img src="https://orthodoxjordan.org/wp-content/uploads/elementor/thumbs/344A5612-scaled-qo3ppclqx7l9bh89sv4rhd4oud4wd50glz616rvdw0.jpg" alt="Orthodox iconostasis inside the church"><figcaption data-en="Icons and the iconostasis" data-ar="الأيقونات وحاجز الأيقونات" data-gr="Οι εικόνες και το τέμπλο">Icons and the iconostasis</figcaption></figure>
+    <figure><img src="https://visitassalt.com/wp-content/uploads/2021/10/d5d16b53-98cd-4764-85f2-6d332fa268ff.jpg" alt="Wooden cross and icons inside Saint George Church"><figcaption data-en="The cross and sacred icons" data-ar="الصليب والأيقونات المقدسة" data-gr="Ο σταυρός και οι ιερές εικόνες">The cross and sacred icons</figcaption></figure>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="section-title">
+    <div class="eyebrow" data-en="Plan Your Visit" data-ar="خطط لزيارتك" data-gr="Σχεδιάστε την επίσκεψή σας">Plan Your Visit</div>
+    <h2 data-en="Come with respect, leave with a memory" data-ar="تعال باحترام، وغادر بذكرى جميلة" data-gr="Ελάτε με σεβασμό, φύγετε με μια όμορφη ανάμνηση">Come with respect, leave with a memory</h2>
+  </div>
+  <div class="info-grid">
+    <div class="info"><strong data-en="Location" data-ar="الموقع" data-gr="Τοποθεσία">Location</strong><span data-en="Al-Khader Street, Old City of Al-Salt, Balqa, Jordan." data-ar="شارع الخضر، البلدة القديمة في مدينة السلط، البلقاء، الأردن." data-gr="Οδός Αλ-Χαντέρ, Παλιά Πόλη του Αλ-Σαλτ, Μπαλκά, Ιορδανία.">Al-Khader Street, Old City of Al-Salt, Balqa, Jordan.</span></div>
+    <div class="info"><strong data-en="Tradition" data-ar="التقليد" data-gr="Παράδοση">Tradition</strong><span data-en="Greek Orthodox Christian tradition." data-ar="التقليد المسيحي للروم الأرثوذكس." data-gr="Ελληνορθόδοξη χριστιανική παράδοση.">Greek Orthodox Christian tradition.</span></div>
+    <div class="info"><strong data-en="Atmosphere" data-ar="الأجواء" data-gr="Ατμόσφαιρα">Atmosphere</strong><span data-en="Quiet, historic and prayerful. Please dress and behave respectfully in this sacred place." data-ar="هادئة وتاريخية وروحانية. يرجى الالتزام باللباس والسلوك اللائقين في هذا المكان المقدس." data-gr="Ήσυχη, ιστορική και κατανυκτική. Παρακαλούμε να ντύνεστε και να συμπεριφέρεστε με σεβασμό σε αυτόν τον ιερό χώρο.">Quiet, historic and prayerful. Please dress and behave respectfully in this sacred place.</span></div>
+    <div class="info"><strong data-en="Before you go" data-ar="قبل الزيارة" data-gr="Πριν την επίσκεψη">Before you go</strong><span data-en="For current service times or visitor arrangements, contact the church or check its official social page before visiting." data-ar="لمعرفة أوقات الصلوات أو ترتيبات الزيارة الحالية، تواصل مع الكنيسة أو راجع صفحتها الرسمية على وسائل التواصل قبل الزيارة." data-gr="Για τα τρέχοντα ωράρια ακολουθιών ή τις ρυθμίσεις επίσκεψης, επικοινωνήστε με την εκκλησία ή ελέγξτε την επίσημη σελίδα της στα κοινωνικά δίκτυα πριν την επίσκεψη.">For current service times or visitor arrangements, contact the church or check its official social page before visiting.</span></div>
+  </div>
+</section>
+
+<section id="facebook">
+  <div class="facebook">
+    <div class="eyebrow" style="color:#f0d58a">CONNECT WITH THE CHURCH</div>
+    <h2 data-en="Follow Saint George Church on Facebook" data-ar="تابع كنيسة القديس جاورجيوس على فيسبوك" data-gr="Ακολουθήστε την Εκκλησία του Αγίου Γεωργίου στο Facebook">Follow Saint George Church on Facebook</h2>
+    <p data-en="The church's Facebook page is a useful place to stay connected with the parish, see announcements and discover church-related updates, events and photographs."
+       data-ar="صفحة الكنيسة على فيسبوك هي وسيلة مفيدة للبقاء على تواصل مع الرعية، ومتابعة الإعلانات والأخبار والفعاليات والصور المتعلقة بالكنيسة." data-gr="Η σελίδα της εκκλησίας στο Facebook είναι ένας χρήσιμος τρόπος να παραμένετε συνδεδεμένοι με την ενορία, να βλέπετε ανακοινώσεις και να ανακαλύπτετε νέα, εκδηλώσεις και φωτογραφίες.">
+      The church's Facebook page is a useful place to stay connected with the parish, see announcements and discover church-related updates, events and photographs.
+    </p>
+    <a class="btn" href="https://www.facebook.com/SaintGeorgeSalt" target="_blank" rel="noopener">Facebook • Saint George Salt ↗</a>
+  </div>
+</section>
+
+<footer>
+  <div style="font-size:1.8rem;color:#c9a24d">✝</div>
+  <p>Saint George Church • Al-Salt, Jordan</p>
+  <p data-en="A website concept created to celebrate faith, heritage and community." data-ar="تصميم موقع للاحتفاء بالإيمان والتراث والمجتمع." data-gr="Ένα σχέδιο ιστοσελίδας αφιερωμένο στην πίστη, την κληρονομιά και την κοινότητα.">A website concept created to celebrate faith, heritage and community.</p>
+  <p style="opacity:.65">Photography sources: Visit Salt • Orthodox Jordan</p>
+</footer>
+
+<script>
+const languages=["en","ar","el"]; let languageIndex=0;
+function toggleLang(){languageIndex=(languageIndex+1)%languages.length;const lang=languages[languageIndex];document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";document.querySelectorAll("[data-en]").forEach(el=>{const v=lang==="en"?el.dataset.en:lang==="ar"?el.dataset.ar:el.dataset.gr;if(v)el.textContent=v;});document.querySelector(".lang").textContent=lang==="en"?"العربية":lang==="ar"?"Ελληνικά":"English";}
+</script>
+</body>
+</html>
